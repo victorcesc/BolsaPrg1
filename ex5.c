@@ -1,14 +1,19 @@
 #include <stdio.h>
- 
-main()
+
+main ()
 {
-  float area,comp;
-  float raio;
- 
-  printf("Entre com o raio do circulo\n");
-  scanf("%f", &raio);
-  comp = 2*3.1415*raio;
-  printf("Valor da comprimento do circulo = %f\n",comp);
-  area = 3.1415*raio*raio;
-  printf("Valor da area do circulo = %f\n",area);
+    float temp;
+
+
+    printf("Entre com a temperatura\n");
+    scanf("%f",&temp);
+
+    //se x igual a y
+    if (temp >30)
+        printf("Quente\n");
+    else if(temp <= 30 && temp >= 25)
+        printf("Morna\n");
+    else if(temp < 25)
+        printf("Fria\n");
+
 }

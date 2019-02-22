@@ -1,15 +1,16 @@
 #include <stdio.h>
- 
-main()
-{
- float r1,r2,reqS,reqP;
- printf("Entre com r1:\n");
- scanf("%f",&r1);
- printf("Entre com r2:\n");
- scanf("%f",&r2);
- reqS = r1+r2; 
- reqP = (r1*r2)/(r1+r2);
- printf ("Valor da req serie = %f\n",reqS);
- printf ("Valor da req paralelo = %f\n",reqP);
-}
 
+main ()
+{
+    int x,y;
+
+    printf("Entre com um numero\n");
+    scanf("%d",&x);
+
+    y = x%2;
+    //se a divisao por 2 tiver resto, é impar, caso contrario é par
+    if (y==0)
+        printf("O numero é par\n");
+    else printf("O numero é impar\n");
+
+}
